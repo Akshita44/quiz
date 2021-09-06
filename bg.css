@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    background: url(quiz.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+button{
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(45deg,cornflowerblue,darkslateblue);
+    /* color: ; */
+    border-radius: 10px;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+    font-size: 20px;
+    font-weight: 500;
+}
+button:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+nav{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+}
+nav a{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+#login{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+#signup{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+
+}
+.innerbox{
+    background:white;
+    padding: 20px;
+    display: flex;
+    width: 350px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.innerbox input{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px 0px;
+    padding: 5px;
+}
+.innerbox h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.innerbox form{
+    display: flex;
+    flex-direction: column;
+}
+.innerbox form input{
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px 0px;
+}
+.innerbox input:focus{
+    border: 0.5px solid cadetblue;
+}
+.innerbox input[type="submit"]
+{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #5FA6D0;
+    color: white;
+    margin-left: 40px;
+}
